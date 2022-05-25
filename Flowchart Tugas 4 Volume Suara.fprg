@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.6">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Binanga"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-05-25 01:18:49 "/>
+        <attribute name="created" value="QmluYW5nYTsgQklOQU5HQS1QQzsgMjAyMi0wNS0yNTsgMDE6MTQ6NDAgOyAyNTg3"/>
+        <attribute name="edited" value="QmluYW5nYTsgQklOQU5HQS1QQzsgMjAyMi0wNS0yNTsgMDE6MTg6NDkgOyAyNjAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="volume" type="Integer" array="False" size=""/>
+            <input variable="volume"/>
+            <if expression="volume &lt;=30">
+                <then>
+                    <output expression="&quot;volume suara rendah&quot;"/>
+                </then>
+                <else>
+                    <if expression="volume&lt;=60">
+                        <then>
+                            <output expression="&quot;volume suara sedang&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="volume&lt;=100">
+                                <then>
+                                    <output expression="&quot;volume suara tinggi&quot;"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Volume suara sangat tinggi&quot;"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
